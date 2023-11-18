@@ -1,0 +1,57 @@
+2023-11-03T04:37:51.557+01:00  INFO 17720 --- [restartedMain] c.e.dataSpring.DataSpringApplication     : Starting DataSpringApplication using Java 17 with PID 17720 (D:\create intij\dataSpring\dataSpring\target\classes started by Hisham in D:\create intij\dataSpring\dataSpring)
+2023-11-03T04:37:51.564+01:00  INFO 17720 --- [restartedMain] c.e.dataSpring.DataSpringApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-11-03T04:37:51.625+01:00  INFO 17720 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-03T04:37:51.625+01:00  INFO 17720 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-03T04:37:52.327+01:00  INFO 17720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-03T04:37:52.346+01:00  INFO 17720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2023-11-03T04:37:52.983+01:00  INFO 17720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-11-03T04:37:52.995+01:00  INFO 17720 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-03T04:37:52.995+01:00  INFO 17720 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-03T04:37:53.061+01:00  INFO 17720 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-03T04:37:53.062+01:00  INFO 17720 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1436 ms
+2023-11-03T04:37:53.218+01:00  INFO 17720 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-03T04:37:53.289+01:00  INFO 17720 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-11-03T04:37:53.292+01:00  INFO 17720 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-11-03T04:37:53.565+01:00  INFO 17720 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-03T04:37:53.589+01:00  INFO 17720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-03T04:37:53.746+01:00  INFO 17720 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f425d0d
+2023-11-03T04:37:53.748+01:00  INFO 17720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-03T04:37:53.804+01:00  WARN 17720 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2023-11-03T04:37:54.388+01:00  INFO 17720 --- [restartedMain] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.example.dataSpring.model.Employee (class must be instantiated by Interceptor)
+2023-11-03T04:37:54.529+01:00  INFO 17720 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-11-03T04:37:54.609+01:00  INFO 17720 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-03T04:37:54.661+01:00  WARN 17720 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-03T04:37:55.033+01:00  INFO 17720 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-03T04:37:55.066+01:00  INFO 17720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-11-03T04:37:55.078+01:00  INFO 17720 --- [restartedMain] c.e.dataSpring.DataSpringApplication     : Started DataSpringApplication in 3.902 seconds (process running for 5.089)
+2023-11-03T04:39:23.498+01:00  INFO 17720 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-11-03T04:39:23.510+01:00  INFO 17720 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-03T04:39:23.536+01:00  INFO 17720 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-03T04:39:23.539+01:00  INFO 17720 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-03T04:39:23.550+01:00  INFO 17720 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-03T04:39:23.624+01:00  INFO 17720 --- [restartedMain] c.e.dataSpring.DataSpringApplication     : Starting DataSpringApplication using Java 17 with PID 17720 (D:\create intij\dataSpring\dataSpring\target\classes started by Hisham in D:\create intij\dataSpring\dataSpring)
+2023-11-03T04:39:23.624+01:00  INFO 17720 --- [restartedMain] c.e.dataSpring.DataSpringApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-11-03T04:39:23.805+01:00  INFO 17720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-03T04:39:23.809+01:00  INFO 17720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2023-11-03T04:39:23.926+01:00  INFO 17720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-11-03T04:39:23.927+01:00  INFO 17720 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-03T04:39:23.927+01:00  INFO 17720 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-03T04:39:23.948+01:00  INFO 17720 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-03T04:39:23.949+01:00  INFO 17720 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 323 ms
+2023-11-03T04:39:23.977+01:00  INFO 17720 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-03T04:39:23.982+01:00  INFO 17720 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-03T04:39:23.984+01:00  INFO 17720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-11-03T04:39:23.989+01:00  INFO 17720 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20a4420b
+2023-11-03T04:39:23.989+01:00  INFO 17720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-11-03T04:39:23.990+01:00  WARN 17720 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2023-11-03T04:39:24.017+01:00  INFO 17720 --- [restartedMain] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.example.dataSpring.model.Employee (class must be instantiated by Interceptor)
+2023-11-03T04:39:24.020+01:00  INFO 17720 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-11-03T04:39:24.048+01:00  INFO 17720 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-03T04:39:24.071+01:00  WARN 17720 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-03T04:39:24.182+01:00  INFO 17720 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-03T04:39:24.189+01:00  INFO 17720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-11-03T04:39:24.193+01:00  INFO 17720 --- [restartedMain] c.e.dataSpring.DataSpringApplication     : Started DataSpringApplication in 0.599 seconds (process running for 94.204)
+2023-11-03T04:39:24.195+01:00  INFO 17720 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-11-03T04:43:49.812+01:00  INFO 17720 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-03T04:43:49.812+01:00  INFO 17720 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-11-03T04:43:49.814+01:00  INFO 17720 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
