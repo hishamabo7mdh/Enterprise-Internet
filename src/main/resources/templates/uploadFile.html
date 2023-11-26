@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+   <title>File Upload Form</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        body {
+              margin-top: 40px;
+              padding: 20px 20px 20px 20px;
+              height: 100vh;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+<div class="container">
+    <form th:action="@{/files/save-file}" method="POST" id="fileUploadForm" enctype="multipart/form-data">
+        <fieldset>
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <div class="row">
+                        <label class="control-label col-md-2 text-right" for="filename"><span>File</span></label>
+                        <div class="col-md-10">
+                            <div class="input-group">
+                                <input type="text" id="id" name="id" th:value="${id}" hidden="true" required>
+                                <input type="hidden" id="filename" name="filename" value="">
+                                <input type="file" id="uploadedFile" name="multipartFile" class="form-control form-control-sm">
+                                <div class="input-group-btn">
+                                    <input type="submit" value="Upload" class="rounded-0 btn btn-primary">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+</body>
+</html>
+

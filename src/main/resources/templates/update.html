@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Edit</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('/images/img.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .container{
+            width: 750px;
+            background: rgba(255, 255, 255, .1);
+            border: 2px solid rgba(255, 255, 255, .2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+            backdrop-filter: blur(50px);
+            border-radius: 10px;
+            color: #fff;
+            padding: 40px 35px 55px;
+            margin: 0 50px;
+        }
+        .container .btn{
+            width: 100%;
+            height: 45px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            cursor: pointer;
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/person/update-person" method="POST">
+            <div class="input-field">
+                <input type="text" name="id" th:value="${person.id}" hidden="true" required>
+            </div>
+            <div class="input-field">
+                <input type="text" name="password" th:value="${person.password}" hidden="true" required>
+            </div>
+            <div class="input-field">
+                <input class="w3-input w3-border w3-round-xxlarge"placeholder="edit Name" name="name"th:value="${person.name}" type="text"></p>
+            </div>
+            <button type="submit" class="btn">Edit</button>
+        </form>
+    </div>
+</body>
+</html>

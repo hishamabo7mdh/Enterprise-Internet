@@ -1,0 +1,46 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>My File Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .container {
+            padding: 20px;
+            margin-top: 30px;
+        }
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="margin-top: 30px; color: #fff;" class="container">
+        <table style="color: #fff; background: aliceblue;" class="table">
+            <thead class="thead-dark">
+            <tr style="background: #fff;">
+                <th style="color: #fff; background: rgb(107, 160, 206);" scope="col">#</th>
+                <th style="color: #fff; background: rgb(107, 160, 206);" scope="col">Name</th>
+                <th style="color: #fff; background: rgb(107, 160, 206);" scope="col">Action</th>
+            </tr>
+            </thead>
+        <tbody>
+        <tr th:each="person : ${persons}">
+            <th style="color: rgb(107, 160, 206);" scope="row" th:text="${person.id}">1</th>
+            <td style="color: rgb(107, 160, 206);" th:text="${person.name}">John Doe</td>
+            <td>
+                <a style="min-width: 100px;" th:href="@{/person/delete-person(id=${person.id})}" class="btn btn-danger">Delete</a>
+                <a style="margin-left:20px; min-width: 100px;" th:href="@{/person/update-person(id=${person.id})}" class="btn btn-success">Edit</a>
+                <a style="margin-left:20px; min-width: 100px;" th:href="@{/person/login}" class="btn btn-success">Login</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <a style="color: #fff; background: rgb(107, 160, 206); min-width: 150px;" href="/person/register-person" class="btn btn-success">Register</a>
+</div>
+</body>
+</html>

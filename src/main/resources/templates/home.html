@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>my file Page</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body{
+            padding:20px 20px 20px 20px
+        }
+        .container{
+            padding:20px 20px 20px 20px
+            margin-top: 30px;
+        }
+        h1{
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<div th:replace="~{include/navbar}"></div>
+   <h1 th:text="'Hi welcome ' + ${person.name}">Hi welcome John Doe</h1>
+        <div style="margin-top: 30px;color:#fff;  " class="container">
+	    <table style="color:#fff;background:aliceblue"class="table">
+            <thead  class="thead-dark">
+                <tr style="background:#fff">
+                <th style="color: rgb(107, 160, 206);background:rgb(107, 160, 206);" scope="col">#</th>
+                <th style="color:#fff;background:rgb(107, 160, 206);"scope="col">Name</th>
+                 <th style="color:#fff;background:rgb(107, 160, 206);"scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="file : ${files}">
+                    <th style="color: rgb(107, 160, 206);" scope="row" th:text="${file.id}">1</th>
+                    <td style="color: rgb(107, 160, 206);" th:text="${file.name}">John Doe</td>
+                    <td>
+                        <a style="margin-left:20px;min-width: 100px;" th:href="@{/files/delete-file(id=${file.id},idPerson=${person.id})}" class="btn btn-danger">Delete</a>
+                        <a style="margin-left:20px min-width: 100px;" th:href="@{/files/download-file(id=${file.id})}" class="btn btn-success">Download</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+            <a style="color:#fff;background:rgb(107, 160, 206);min-width: 150px;"
+               th:href="@{/files/save-file(id=${person.id})}" class="btn btn-success">Upload file</a>
+      </div>
+</body>
+</html>
